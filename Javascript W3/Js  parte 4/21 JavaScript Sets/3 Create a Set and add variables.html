@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sets</h1>
+    <p>Add variables to a Set</p>
+    <p id="demo"></p>
+    <script>
+        //Create a set
+        const letters= new Set();
+
+        //Create Variables
+        const a ="a";
+        const b ="b";
+        const c = "c";
+
+
+        //Add the variables to the Set
+        letters.add(a);
+        letters.add(b);
+        letters.add(c);
+
+
+        // dispplay set.size
+        document.getElementById("demo").innerHTML=letters.size;
+    </script>
+</body>
+</html>

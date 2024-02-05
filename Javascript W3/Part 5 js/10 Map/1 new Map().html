@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to create a map part1 </title>
+</head>
+
+<body>
+    <h2>You can create a Map by passing an Array to the new Map() constructor:</h2>
+    <h2>JavaScript Map Objects</h2>
+    <p>Creating a Map from an Array:</p>
+    <p id="demo"></p>
+    <script>
+        //Create a Map
+        const fruits =new Map ([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges",200]
+        ]);
+        document.getElementById("demo").innerHTML=fruits.get("apples");
+    </script>
+
+</body>
+
+</html>

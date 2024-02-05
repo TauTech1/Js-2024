@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String lastIndexOf()</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The lastIndexOf() Method</h2>
+
+    <p>The position of the last occurrence of "locate" is:</p>
+
+    <p id="demo"></p>
+    <script>
+        let text="Please locate where 'locate' occurs";
+        let index= text.lastIndexOf("locate");
+        document.getElementById("demo").innerHTML=index;
+    </script>
+<p>Both indexOf(), and lastIndexOf() return -1 if the text is not found:</p>
+</body>
+
+</html>

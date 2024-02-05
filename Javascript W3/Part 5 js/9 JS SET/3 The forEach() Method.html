@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach() calls a function for each element</title>
+</head>
+<body>
+    <h2>Js Sets</h2>
+    <h3>forEach() calls a function for each element</h3>
+    <p id="demo"></p>
+    <script>
+        //Create a Set
+        const letters= new Set (["a","b","c"]);
+        //List all Elements
+        let text="";
+        letters.forEach(function(value) {
+            text= text+ value+"<br>"
+        })
+        document.getElementById("demo").innerHTML=text;
+    </script>
+    
+</body>
+</html>

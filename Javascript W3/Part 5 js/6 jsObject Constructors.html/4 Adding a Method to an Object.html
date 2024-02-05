@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a Method to an Object</title>
+</head>
+<body>
+    <h2>Adding a Method to an Object</h2>
+    <p id="demo"></p>
+    <script>
+        //Constructor function for Person objetcts
+        function Person(first, last, age, eye){
+            this.firstName=first;
+            this.lastName=last;
+            this.age=age;
+            this.eyeColor=eye;
+        }
+        // Create 2 Person objects
+        const myFather= new Person("John", "Doe", 50, "blue");
+        const myMother= new Person("Sally", "Rally", 48, "green");
+        //Add a name method to first object
+        myFather.name= function(){
+            return this.firstName+ " "+this.lastName;
+        };
+
+        //Display full name 
+        document.getElementById("demo").innerHTML=
+        "My father is "+ myFather.name();
+    </script>
+    
+</body>
+</html>

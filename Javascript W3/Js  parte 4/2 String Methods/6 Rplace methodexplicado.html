@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Encabezado principal -->
+<h1>JavaScript String Methods</h1>
+
+<!-- Descripción del cambio que se realizará -->
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<!-- Botón que activará la función al hacer clic -->
+<button onclick="myFunction()">Try it</button>
+
+<!-- Párrafo con un identificador único -->
+<p id="demo">Please visit Microsoft and Microsoft!</p>
+
+<!-- Script de JavaScript -->
+<script>
+// Definición de la función que se ejecutará al hacer clic en el botón
+function myFunction() {
+  // Obtener el contenido actual del elemento con ID "demo"
+  let text = document.getElementById("demo").innerHTML; 
+  
+  // Reemplazar todas las instancias de "Microsoft" con "W3Schools" en el texto
+  document.getElementById("demo").innerHTML =
+    text.replace("Microsoft", "W3Schools");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<div style="font-family: Arial, sans-serif; background: linear-gradient(35deg, #4CAF50, #2196F3); color: #fff; margin: 1; height: 60vh; overflow: hidden;">
+    <h2 style="color: #fff; text-align: center; margin-top: 30px;">"¿Qué día es hoy?"
+
+
+
+
+</h2>
+    <div id="demo-container" style="font-size: 5vh; font-weight: bold; text-align: center; margin-top: 10vh; animation: fadeIn 2s ease-in-out; display: flex; align-items: center; justify-content: center;">
+        <p id="demo" class="animated-text"></p>
+    </div>
+</div>
+
+<script>
+    let day;
+    switch (new Date().getDay()){
+        case 0:
+            day="الأَحَد (al-Ahad) - Domingo";
+            break;
+        case 1:
+            day="الإثْنَيْن (al-Ithnayn) - Lunes";
+            break;
+        case 2:
+            day="الثُّلاثاء (ath-Thulāthā') - Martes";
+            break;
+        case 3:
+            day="الأَرْبَعاء (al-Arba'a') - Miércoles";
+            break;
+        case 4:
+            day="الخَميس (al-Khamīs) - Jueves";
+            break;
+        case 5:
+            day="الجُمعة (al-Jumu'ah) - Viernes";
+            break;
+        case 6:
+            day="السَّبت (as-Sabt) - Sábado";
+    }
+    document.getElementById("demo").innerHTML = "Hoy es:  " + "<br>"+  "<br>"+ day;
+</script>

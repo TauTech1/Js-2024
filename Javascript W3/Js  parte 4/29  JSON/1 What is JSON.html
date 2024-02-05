@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is JSON</title>
+</head>
+
+<body>
+    <h4> JSON is a format for storing and transporting data. JSON هو تنسيق لتخزين البيانات ونقلها.
+        <br>
+
+JSON is often used when data is sent from a server to a web page يتم استخدام JSON غالبًا عند إرسال البيانات من الخادم إلى صفحة الويب.
+</h4>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+const obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+
+
+
+</body>
+
+</html>

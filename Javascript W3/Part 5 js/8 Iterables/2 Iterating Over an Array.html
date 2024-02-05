@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterating Over an Array</title>
+
+</head>
+<body>
+    <h2>Iterating Over an Array</h2>
+    <p id="demo"></p>
+    <script>
+        //Create an Array
+        const letters =["a", "b", "c"];
+        // list all elements
+        let text="";
+        for (const x of letters){
+            text=text+ x + "<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+
+    </script>
+    
+</body>
+</html>

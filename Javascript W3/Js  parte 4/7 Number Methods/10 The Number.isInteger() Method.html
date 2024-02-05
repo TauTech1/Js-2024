@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Numbers</h1>
+    <h2>The isInteger() Method</h2>
+
+    <p>The isInteger() method returns true if the argument is an integer.</p>
+    <p>Otherwise it returns false.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+            Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
+    </script>
+    <p>
+        Safe integers are all integers from -(253 - 1) to +(253 - 1).
+        This is safe: 9007199254740991. This is not safe: 9007199254740992.
+    </p>
+    <p>Note
+        The Number methods Number.parseInt() and Number.parseFloat()
+        
+        are the same as the
+        
+        Global methods parseInt() and parseFloat().
+        
+        The purpose is modularization of globals (to make it easier to use the same JavaScript code outside the browser).</p>
+
+</body>
+
+</html>

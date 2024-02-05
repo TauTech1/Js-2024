@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The set() Methods</title>
+</head>
+<body>
+    <h3>USING map SEt</h3>
+    <p id="demo"></p>
+    <script>
+        //Create a map
+        const fruits= new Map();
+
+        //Set Map values
+        fruits.set("apples",500);
+        fruits.set("bananas",300);
+        fruits.set("oranges",200);
+        // set() method can also be used to change a map value
+        fruits.set("apples", 400);
+
+        document.getElementById("demo").innerHTML=fruits.get("apples");
+    </script>
+    
+</body>
+</html>

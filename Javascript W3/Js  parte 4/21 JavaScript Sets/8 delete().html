@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Sets</h2>
+    <h2> Adding new elemnts to a Set</h2>
+    <p id="demo"></p>
+
+    <script>
+        //Create a Set
+        const letters =new Set(["a", "b", "c"]);
+
+        //Add new elemnts 
+
+        letters.delete("a");
+        letters.add("a");
+        
+
+
+        // Dsiplay set.size
+        document.getElementById("demo").innerHTML=letters.size;
+
+
+    </script>
+    
+</body>
+</html>

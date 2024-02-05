@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> array using the length property:</title>
+</head>
+<body>
+    <h1>Javascript Arrays</h1>
+    <p>The Length property provides an easy way to append new elements to an array</p>
+    <button onclick="myFunction()">Try it </button>
+    <p id="demo"></p>
+    <script>
+        const fruits=["Banana", "Orange", "Apple"];
+        document.getElementById("demo").innerHTML=fruits;
+        function myFunction(){
+            fruits[fruits.length]="Lemon";
+            document.getElementById("demo").innerHTML=fruits;
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String includes()</title>
+</head>
+
+<body>
+    <p>The includes() method returns true if a string contains a specified value.
+        Otherwise it returns false</p> <br>
+    <p>Examples
+        Check if a string includes "world": <br>
+
+        let text = "Hello world, welcome to the universe.";<br>
+        text.includes("world");</p>
+    <h1>JavaScript Strings</h1>
+    <h2>The includes() Method</h2>
+
+    <p>Check if a string includes "world":</p>
+    <p id="demo"></p>
+
+    <p>The includes() method is not supported in Internet Explorer.</p>
+
+    <script>
+        let text="Hello world, welcome to the universe";
+        document.getElementById("demo").innerHTML=text.includes("world", 12);
+    </script>
+
+</body>
+
+</html>

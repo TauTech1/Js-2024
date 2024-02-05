@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this Keyword</title>
+</head>
+
+<body>
+
+    <h1>The JavaScript <i>this</i> Keyword</h1>
+    <p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+    <p>Because <b>fullName</b> is a method of the person object.</p>
+<p>What is this?
+    In JavaScript, the this keyword refers to an object.
+    
+    Which object depends on how this is being invoked (used or called).
+    
+    The this keyword refers to different objects depending on how it is used:
+    
+    In an object method, this refers to the object.
+    Alone, this refers to the global object.
+    In a function, this refers to the global object.
+    In a function, in strict mode, this is undefined.
+    In an event, this refers to the element that received the event.
+    Methods like call(), apply(), and bind() can refer this to any object.</p>
+    <p id="demo"></p>
+    <script>
+        //Create an object:
+        const person={
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function(){
+                return this.firstName+" "+ this.lastName;
+            }
+        };
+        // display data from the object:
+        document.getElementById("demo").innerHTML=person.fullName();
+    </script>
+</body>
+
+</html>

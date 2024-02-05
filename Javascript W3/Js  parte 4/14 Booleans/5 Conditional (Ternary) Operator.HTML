@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional (Ternary) Operator</title>
+</head>
+<body>
+    <h1>JavaScript Comparison</h1>
+<h2>The () ? : Ternary Operator</h2>
+
+<p>Input you age and click the button:</p>
+<input id="age"   value=""/>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+    function myFunction(){
+        let age=document.getElementById("age").value;
+        let voteable=(age<18)? "You cannot vote, you are too young":"You can vote";
+        document.getElementById("demo").innerHTML=voteable +" to vote"
+    }
+</script>
+    
+</body>
+</html>

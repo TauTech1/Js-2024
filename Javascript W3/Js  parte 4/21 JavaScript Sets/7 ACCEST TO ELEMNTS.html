@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h2>Iterating Set values</h2>
+    <p id="demo"></p>
+
+    <script>
+        //Create a Set
+        const letters =new Set(["a","b","c"]);
+
+        //list all elements
+        let text="";
+        for(const x of letters.values()){
+            text=text+x+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+ </body>
+ </html>

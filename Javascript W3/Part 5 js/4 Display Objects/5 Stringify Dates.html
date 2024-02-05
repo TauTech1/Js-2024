@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringify Date </title>
+</head>
+
+<body>
+    <p>JSON.stringify will convert dates into strings:</p>
+    <p id="demo"></p>
+    <script>
+        var person={
+            name: "John",
+            today: new Date()
+        };
+
+        document.getElementById("demo").innerHTML= JSON.stringify(person);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Objects</h2>
+    <p>JSON.stringify will not stringify functions:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            name: "John",
+            //age: function () { return 30; } JSON.stringify will not stringify functions:
+            //This can be "fixed" if you convert the functions into strings before stringifying.
+
+            age: function () {return 30;}
+
+
+
+
+        };
+        person.age = person.age.toString();
+
+        document.getElementById("demo").innerHTML = JSON.stringify(person);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Objects</title>
+</head>
+
+<body>
+    <h3>Nested Objects</h3>
+    <h3>الكائنات المتداخلة</h3>
+    <h2>JavaScript Objects</h2>
+    <p>Access nested objects:</p>
+
+    <p id="demo"></p>
+    <script>
+        const myObj={
+            name: "Jomh",
+            age:30,
+            cars: {
+                car1: "Ford",
+                car2: "BMW",
+                car3: "Fiat"
+            }
+        }
+        document.getElementById("demo").innerHTML=myObj.cars.car1;
+    </script>
+
+</body>
+
+</html>

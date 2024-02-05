@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a Property to an Object</title>
+</head>
+<body>
+    <h2>Adding a Property to an Object</h2>
+    <p id="demo"></p>
+    
+    <script>
+        //Constructor function for Person objetcs
+        function Person(first, last, age, eye){
+            this.firstname=first;
+            this.lasname=last;
+            this.age=age;
+            this.eyecolor=eye;
+        }
+        // Create 2 Person objetcs
+        const myFather= new Person("John", "Doe", 50, "Black");
+        const myMother= new Person("Sally", "Rally", 48, "green");
+
+        //Add nationality to first object
+        myFather.nationality="English";
+        //Display nationality 
+        document.getElementById("demo").innerHTML=
+        "My father is "+ myFather.nationality;
+    </script>
+    <p> The property will be added to myFather. Not to myMother. (Not to any other person objects).</p>
+</body>
+</html>
