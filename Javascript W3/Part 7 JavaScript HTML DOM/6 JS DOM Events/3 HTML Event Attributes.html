@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> js HTML events </h1>
+    <h2>The onclick Attribute </h2>
+    <p>Click button to display the date</p>
+    <button onclick="displayDate()">The time is</button>
+
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML=Date();
+        }
+        
+    </script>
+    <p id="demo"></p>
+    
+</body>
+</html>

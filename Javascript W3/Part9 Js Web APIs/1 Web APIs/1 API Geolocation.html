@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Web API</title>
+</head>
+<body>
+    <h3>What is Web API?</h3>
+    <p>API stands for Application Programming Interface.<br>
+
+        A Web API is an application programming interface for the Web.<br>
+        
+        A Browser API can extend the functionality of a web browser.<br>
+        
+        A Server API can extend the functionality of a web server.</p>
+
+        <h1>Browser APIs</h1>
+        <h2>JavaScript Geolocation</h2>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try it</button>
+<p id="demo"></p>
+
+<script>
+    const x=document.getElementById("demo");
+    function getLocation(){
+        try{
+            navigator.geolocation.getCurrentPosition(showPosition);
+
+        }catch{
+            x.innerHTML=err;
+        }
+    }
+    function showPosition(position){
+        x.innerHTML= "Latitude: "+ position.coords.latitude+ "<br> Longitude: "+position.coords.longitude;
+    }
+</script>
+    
+</body>
+</html>

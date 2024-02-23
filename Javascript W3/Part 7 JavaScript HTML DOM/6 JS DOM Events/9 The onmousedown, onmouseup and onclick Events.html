@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The onmousedown, onmouseup and onclick Events</title>
+</head>
+<body>
+    <h1>The onmousedown, onmouseup and onclick Events</h1>
+   <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+   style="background-color:#D94A38; width:90px; height:20px; padding:40px;">Pista 1</div> 
+</body>
+
+<script>
+    function mDown(obj){
+        obj.style.backgroundColor="#1ec5e5";
+        obj.innerHTML="The driver is going to win "
+    }
+    function mUp(obj){
+        obj.style.backgroundColor="#D94A38"
+        obj.innerHTML="Pista 1"
+    }
+</script>
+</html>

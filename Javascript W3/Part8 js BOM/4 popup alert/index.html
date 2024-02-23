@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Visitantes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #contador {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #numero {
+            font-size: 24px;
+            color: #ff4500;
+            animation: pulse 1s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenido a mi página web</h1>
+    
+    <p id="contador">Número de visitantes: <span id="numero">0</span></p>
+
+    <script>
+        var contador = localStorage.getItem('contador');
+
+        if (contador === null) {
+            contador = 0;
+        } else {
+            contador = parseInt(contador);
+        }
+
+        contador++;
+        document.getElementById('numero').innerText = contador;
+
+        localStorage.setItem('contador', contador.toString());
+    </script>
+
+</body>
+</html>
+
